@@ -12,7 +12,7 @@
 {
     float yOpt;
     float T;
-    float mu;
+    float orderPoint;
 }
 
 @property float D;

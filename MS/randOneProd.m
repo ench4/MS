@@ -7,6 +7,7 @@
 //
 
 #import "randOneProd.h"
+#import "NormalDistr.h"
 
 @implementation randOneProd
 
@@ -29,7 +30,7 @@
 
 -(float) optimal
 {
-    return yOpt=sqrtf(2*K*D/h);
+    return yOpt=sqrt(2*K*D/h);
 }
 
 -(float) calcPeriod
@@ -41,17 +42,23 @@
     return T;
 }
 
--(float) calcMu
+-(float) orderPoint
 {
-    return mu=D*L;
+    return orderPoint=D*T;
 }
 
 -(float) calcB
 {
-    float sigmaL=sigma*sqrtf(L);
-    
+    double B=0;
+    B=[NormalDistr inverseNormalDistrFor:alpha]*sqrt(sigma*sigma*T);
+    B=((int)B)+1;//плохо
+    return B;
 }
 
+- (NSString*) description
+{
+    return [NSString stringWithFormat:@"При экономичном размере заказа у* = %f единиц оптимальная политика управления запасами с объемом резерва В=%f состоит в заказе %f ламп, как только объем запаса уменьшается до %f единиц.\n",yOpt,[self calcB],yOpt,(int)orderPoint+[self calcB]];
+}
 
 
 @end
