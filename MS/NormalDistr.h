@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NormalDistr : NSObject
-+ (int) calcForValue:(int) x;
++ (double) calcForValue:(double) x;
++ (double) calcErrorFunc :(double) x;
 @end

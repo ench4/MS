@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04F5EDC01674D6CE00B8CD9D /* randOneProd.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F5EDBF1674D6CE00B8CD9D /* randOneProd.m */; };
 		6C0165E51672253700A52C3C /* multiProd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0165E41672253700A52C3C /* multiProd.m */; };
 		6C727D491667482D006A6209 /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C727D481667482D006A6209 /* Result.m */; };
 		6C727D4D16674BAE006A6209 /* OneProd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C727D4C16674BAE006A6209 /* OneProd.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04F5EDBE1674D6CE00B8CD9D /* randOneProd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = randOneProd.h; sourceTree = "<group>"; };
+		04F5EDBF1674D6CE00B8CD9D /* randOneProd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = randOneProd.m; sourceTree = "<group>"; };
 		6C0165E31672253700A52C3C /* multiProd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multiProd.h; sourceTree = "<group>"; };
 		6C0165E41672253700A52C3C /* multiProd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = multiProd.m; sourceTree = "<group>"; };
 		6C727D471667482D006A6209 /* Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				6C0165E41672253700A52C3C /* multiProd.m */,
 				6CD7547E1666AC4F00CF0433 /* NormalDistr.h */,
 				6CD7547F1666AC4F00CF0433 /* NormalDistr.m */,
+				04F5EDBE1674D6CE00B8CD9D /* randOneProd.h */,
+				04F5EDBF1674D6CE00B8CD9D /* randOneProd.m */,
 				6C727D471667482D006A6209 /* Result.h */,
 				6C727D481667482D006A6209 /* Result.m */,
 				6CD754741666AB2300CF0433 /* MainMenu.xib */,
@@ -192,6 +197,7 @@
 				6C727D491667482D006A6209 /* Result.m in Sources */,
 				6C727D4D16674BAE006A6209 /* OneProd.m in Sources */,
 				6C0165E51672253700A52C3C /* multiProd.m in Sources */,
+				04F5EDC01674D6CE00B8CD9D /* randOneProd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
