@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0165E51672253700A52C3C /* multiProd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0165E41672253700A52C3C /* multiProd.m */; };
+		6C727D491667482D006A6209 /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C727D481667482D006A6209 /* Result.m */; };
+		6C727D4D16674BAE006A6209 /* OneProd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C727D4C16674BAE006A6209 /* OneProd.m */; };
 		6CD754601666AB2200CF0433 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD7545F1666AB2200CF0433 /* Cocoa.framework */; };
 		6CD7546A1666AB2200CF0433 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CD754681666AB2200CF0433 /* InfoPlist.strings */; };
 		6CD7546C1666AB2300CF0433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7546B1666AB2300CF0433 /* main.m */; };
 		6CD754701666AB2300CF0433 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6CD7546E1666AB2300CF0433 /* Credits.rtf */; };
 		6CD754731666AB2300CF0433 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD754721666AB2300CF0433 /* AppDelegate.m */; };
 		6CD754761666AB2300CF0433 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD754741666AB2300CF0433 /* MainMenu.xib */; };
+		6CD754801666AC4F00CF0433 /* NormalDistr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7547F1666AC4F00CF0433 /* NormalDistr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C0165E31672253700A52C3C /* multiProd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multiProd.h; sourceTree = "<group>"; };
+		6C0165E41672253700A52C3C /* multiProd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = multiProd.m; sourceTree = "<group>"; };
+		6C727D471667482D006A6209 /* Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
+		6C727D481667482D006A6209 /* Result.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Result.m; sourceTree = "<group>"; };
+		6C727D4B16674BAE006A6209 /* OneProd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneProd.h; sourceTree = "<group>"; };
+		6C727D4C16674BAE006A6209 /* OneProd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneProd.m; sourceTree = "<group>"; };
 		6CD7545B1666AB2200CF0433 /* MS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD7545F1666AB2200CF0433 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6CD754621666AB2200CF0433 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,6 +39,8 @@
 		6CD754711666AB2300CF0433 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6CD754721666AB2300CF0433 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6CD754751666AB2300CF0433 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6CD7547E1666AC4F00CF0433 /* NormalDistr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalDistr.h; sourceTree = "<group>"; };
+		6CD7547F1666AC4F00CF0433 /* NormalDistr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalDistr.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,14 @@
 			children = (
 				6CD754711666AB2300CF0433 /* AppDelegate.h */,
 				6CD754721666AB2300CF0433 /* AppDelegate.m */,
+				6C727D4B16674BAE006A6209 /* OneProd.h */,
+				6C727D4C16674BAE006A6209 /* OneProd.m */,
+				6C0165E31672253700A52C3C /* multiProd.h */,
+				6C0165E41672253700A52C3C /* multiProd.m */,
+				6CD7547E1666AC4F00CF0433 /* NormalDistr.h */,
+				6CD7547F1666AC4F00CF0433 /* NormalDistr.m */,
+				6C727D471667482D006A6209 /* Result.h */,
+				6C727D481667482D006A6209 /* Result.m */,
 				6CD754741666AB2300CF0433 /* MainMenu.xib */,
 				6CD754661666AB2200CF0433 /* Supporting Files */,
 			);
@@ -168,6 +188,10 @@
 			files = (
 				6CD7546C1666AB2300CF0433 /* main.m in Sources */,
 				6CD754731666AB2300CF0433 /* AppDelegate.m in Sources */,
+				6CD754801666AC4F00CF0433 /* NormalDistr.m in Sources */,
+				6C727D491667482D006A6209 /* Result.m in Sources */,
+				6C727D4D16674BAE006A6209 /* OneProd.m in Sources */,
+				6C0165E51672253700A52C3C /* multiProd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +321,7 @@
 				6CD7547B1666AB2300CF0433 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

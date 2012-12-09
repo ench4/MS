@@ -7,8 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "multiProd.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+{
+    IBOutlet multiProd* model1;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
