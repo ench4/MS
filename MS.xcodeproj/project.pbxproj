@@ -18,6 +18,7 @@
 		6CD754731666AB2300CF0433 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD754721666AB2300CF0433 /* AppDelegate.m */; };
 		6CD754761666AB2300CF0433 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD754741666AB2300CF0433 /* MainMenu.xib */; };
 		6CD754801666AC4F00CF0433 /* NormalDistr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7547F1666AC4F00CF0433 /* NormalDistr.m */; };
+		6CF7E8BF167700AC008D90FD /* Model4.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CF7E8BE167700AC008D90FD /* Model4.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		6CD754751666AB2300CF0433 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		6CD7547E1666AC4F00CF0433 /* NormalDistr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalDistr.h; sourceTree = "<group>"; };
 		6CD7547F1666AC4F00CF0433 /* NormalDistr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalDistr.m; sourceTree = "<group>"; };
+		6CF7E8BD167700AC008D90FD /* Model4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model4.h; sourceTree = "<group>"; };
+		6CF7E8BE167700AC008D90FD /* Model4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model4.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				6CD7547F1666AC4F00CF0433 /* NormalDistr.m */,
 				04F5EDBE1674D6CE00B8CD9D /* randOneProd.h */,
 				04F5EDBF1674D6CE00B8CD9D /* randOneProd.m */,
+				6CF7E8BD167700AC008D90FD /* Model4.h */,
+				6CF7E8BE167700AC008D90FD /* Model4.m */,
 				6C727D471667482D006A6209 /* Result.h */,
 				6C727D481667482D006A6209 /* Result.m */,
 				6CD754741666AB2300CF0433 /* MainMenu.xib */,
@@ -198,6 +203,7 @@
 				6C727D4D16674BAE006A6209 /* OneProd.m in Sources */,
 				6C0165E51672253700A52C3C /* multiProd.m in Sources */,
 				04F5EDC01674D6CE00B8CD9D /* randOneProd.m in Sources */,
+				6CF7E8BF167700AC008D90FD /* Model4.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

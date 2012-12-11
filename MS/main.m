@@ -7,13 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "Model4.h"
 #import "NormalDistr.h"
 
 int main(int argc, char *argv[])
 {
-    NSLog(@"%f",[NormalDistr inverseNormalDistrFor:0.8159]);
-    NSLog(@"%f",[NormalDistr inverseNormalDistrFor:0.5]);
-    NSLog(@"%f",[NormalDistr inverseNormalDistrFor:0.0]);
-    NSLog(@"%f",[NormalDistr inverseNormalDistrFor:1]);
-    //return NSApplicationMain(argc, (const char **)argv);
+    return NSApplicationMain(argc, (const char **)argv);
 }

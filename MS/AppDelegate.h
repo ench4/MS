@@ -8,10 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 #import "multiProd.h"
+#import "randOneProd.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 {
     IBOutlet multiProd* model1;
+    IBOutlet NSMutableArray* model3;
+    IBOutlet NSMutableArray* model4;
 }
 
 @property (assign) IBOutlet NSWindow *window;
