@@ -13,8 +13,5 @@
 
 int main(int argc, char *argv[])
 {
-    DinamicModel* d=[[DinamicModel alloc] init];
-    d.initialX=3;
-    printf("%f",[d gogo]);
-    //return NSApplicationMain(argc, (const char **)argv);
+    return NSApplicationMain(argc, (const char **)argv);
 }

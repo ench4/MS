@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "OneProd.h"
 
 @interface multiProd : NSObject
 {
     NSMutableArray *products;
     float warehouseSize;
 }
+@property NSMutableArray *products;
+@property float warehouseSize;
 -(float)capacity;
 @end

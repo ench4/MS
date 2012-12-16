@@ -7,7 +7,7 @@
 //
 
 #import "multiProd.h"
-#import "OneProd.h"
+
 
 @implementation multiProd
 -(id) init
@@ -15,10 +15,13 @@
     self=[super init];
     if (self){
         products=[[NSMutableArray alloc] init];
+        
+        
     }
     return self;
 }
--(float)capacity
+
+-(float)capacity//
 {
     float sum=0;
     for (int i=0;i<[products count];i++) {
@@ -26,7 +29,7 @@
     }
     return sum;
 }
--(float) deltaWithLambda:(float) lambda
+-(float) deltaWithLambda:(float) lambda//разница между занимаемым местоми размером склада
 {
     float sum=0;
     for (int i=0;i<[products count];i++) {
@@ -34,7 +37,7 @@
     }
     return sum-warehouseSize;
 }
--(void) doAll
+-(void) doAll//изменяет размер заказа, чтобы он вместился на склад
 {
     if ([self capacity]<warehouseSize)
     {
@@ -45,7 +48,8 @@
         while ([self deltaWithLambda:lambda]*[self deltaWithLambda:lambda-1]>0) {
             lambda--;
         }
-        lambda=[self secantMethodFrom:lambda To:lambda+1 WithEps:0.01];
+        lambda=[self secantMethodFrom:lambda-1 To:lambda WithEps:0.001];
+                NSLog(@"%f ",[self deltaWithLambda:lambda]);
         for (int i=0; i<[products count]; i++) {
             [(OneProd*)(products[i]) recalcYoptWithLambda:lambda];
         }
@@ -59,8 +63,19 @@
     }
     return sum;
 }
+-(void) makeCalc
+{
+    for (int i=0; i<[products count]; ++i) {
+        [products[i] optimal];
+    }
+    [self doAll];
+    [self calcTCU];
+}
 -(NSString*) description
 {
+    [self makeCalc];
+    
+    
     NSMutableString* s=[[NSMutableString alloc] init];
     for (int i=0;i<[products count];i++) {
         [s appendString:[(OneProd*)[products objectAtIndex:i] description]] ;
@@ -79,4 +94,6 @@
     }while (fabs([self deltaWithLambda:c])>eps);
     return c;
 }
+@synthesize warehouseSize=warehouseSize;
+@synthesize products=products;
 @end

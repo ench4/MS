@@ -37,13 +37,14 @@
 {
     T=yOpt/D;
     if (T<L){
-        T=L-T*((int)L/T);
+        T=L-T*((int)(L/T));
     }
     return T;
 }
 
 -(float) orderPoint
 {
+    [self calcPeriod];
     return orderPoint=D*T;
 }
 
@@ -54,9 +55,16 @@
     B=((int)B)+1;//плохо
     return B;
 }
-
+-(void) makeCalc
+{
+    [self optimal];
+    [self orderPoint];
+    [self calcB];
+}
 - (NSString*) description
 {
+    [self makeCalc];
+    
     return [NSString stringWithFormat:@"При экономичном размере заказа у* = %f единиц оптимальная политика управления запасами с объемом резерва В=%f состоит в заказе %f ламп, как только объем запаса уменьшается до %f единиц.\n",yOpt,[self calcB],yOpt,(int)orderPoint+[self calcB]];
 }
 

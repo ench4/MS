@@ -54,7 +54,7 @@
 {
     if (![self check])
     {
-        NSException* exc=[NSException exceptionWithName:@"error" reason:nil userInfo:nil];
+        NSException* exc=[NSException exceptionWithName:@"error" reason:@"Решения не существует"  userInfo:nil];
         @throw exc;
     }
     else

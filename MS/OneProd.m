@@ -48,15 +48,15 @@
         }
     }
 }
--(float) calcCapacity
+-(float) calcCapacity//вычисляет занимаемое место на складе
 {
     return a*[self optimal];
 }
--(float) capacityWithLambda:(float) lambda
+-(float) capacityWithLambda:(float) lambda//вычисляет занимаемое место на складе при заданном множителе лагранжа
 {
     return a*sqrt(2*K*D/(h-2*a*lambda));
 }
--(float) recalcYoptWithLambda:(float)lambda
+-(float) recalcYoptWithLambda:(float)lambda//оптимальный заказ при заданном множителе лагранжа
 {
     return yOpt=sqrt(2*K*D/(h-2*a*lambda));
 }
@@ -64,12 +64,14 @@
 {
     T=yOpt/D;
     if (T<L){
-        T=L-T*((int)L/T);
+        T=L-T*((int)(L/T));
     }
     return T;
 }
 -(float) orderPoint
 {
+    [self calcPeriod];
+    NSLog(@"%f ",T);
     return T*D;
 }
 -(float) calcTCU
