@@ -63,6 +63,7 @@
 -(float) calcPeriod
 {
     T=yOpt/D;
+    
     if (T<L){
         T=L-T*((int)(L/T));
     }
@@ -71,7 +72,8 @@
 -(float) orderPoint
 {
     [self calcPeriod];
-    NSLog(@"%f ",T);
+    //NSLog(@"%f ",T);
+    NSLog(@"%f ",T*D);
     return T*D;
 }
 -(float) calcTCU

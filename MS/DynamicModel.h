@@ -7,8 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+@interface OneDynamicModel : NSObject
+{
+    
+}
 
-@interface DinamicModel : NSObject
+@property float D;
+@property float h;
+@property float K;
+
+@end
+
+@interface DynamicModel : NSObject
 {
     NSInteger a;//разрыв функции стоимости производства
     NSMutableArray *result;//здесь лежат решения на каждом этапе
@@ -25,24 +35,11 @@
 
 //x –  запас [ед];
 
-@property NSMutableArray *D;
-@property NSMutableArray *h;
-@property NSMutableArray *K;
+@property NSMutableArray *periods;
 @property float initialX;
 
-
--(float) calcCforZ:(float)Z andK:(float)k;
--(float) maxX:(int)i;
--(void) calcResult;
--(void) printResult;
--(CGPoint) calcMinForOneIteration:(int)X;
-
-
+- (void) printResult;
 - (float) gogo;
-
-
-
-
 
 
 @end

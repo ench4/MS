@@ -11,7 +11,7 @@
 		6C0165E51672253700A52C3C /* multiProd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0165E41672253700A52C3C /* multiProd.m */; };
 		6C727D491667482D006A6209 /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C727D481667482D006A6209 /* Result.m */; };
 		6C727D4D16674BAE006A6209 /* OneProd.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C727D4C16674BAE006A6209 /* OneProd.m */; };
-		6CC58E5516775B4900C5F764 /* DinamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC58E5416775B4800C5F764 /* DinamicModel.m */; };
+		6CC58E5516775B4900C5F764 /* DynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC58E5416775B4800C5F764 /* DynamicModel.m */; };
 		6CD754601666AB2200CF0433 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD7545F1666AB2200CF0433 /* Cocoa.framework */; };
 		6CD7546A1666AB2200CF0433 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CD754681666AB2200CF0433 /* InfoPlist.strings */; };
 		6CD7546C1666AB2300CF0433 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7546B1666AB2300CF0433 /* main.m */; };
@@ -31,8 +31,8 @@
 		6C727D481667482D006A6209 /* Result.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Result.m; sourceTree = "<group>"; };
 		6C727D4B16674BAE006A6209 /* OneProd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneProd.h; sourceTree = "<group>"; };
 		6C727D4C16674BAE006A6209 /* OneProd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneProd.m; sourceTree = "<group>"; };
-		6CC58E5316775B4000C5F764 /* DinamicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinamicModel.h; sourceTree = "<group>"; };
-		6CC58E5416775B4800C5F764 /* DinamicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DinamicModel.m; sourceTree = "<group>"; };
+		6CC58E5316775B4000C5F764 /* DynamicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicModel.h; sourceTree = "<group>"; };
+		6CC58E5416775B4800C5F764 /* DynamicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicModel.m; sourceTree = "<group>"; };
 		6CD7545B1666AB2200CF0433 /* MS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD7545F1666AB2200CF0433 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6CD754621666AB2200CF0433 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -117,8 +117,8 @@
 				6CF7E8BE167700AC008D90FD /* Model4.m */,
 				6C727D471667482D006A6209 /* Result.h */,
 				6C727D481667482D006A6209 /* Result.m */,
-				6CC58E5316775B4000C5F764 /* DinamicModel.h */,
-				6CC58E5416775B4800C5F764 /* DinamicModel.m */,
+				6CC58E5316775B4000C5F764 /* DynamicModel.h */,
+				6CC58E5416775B4800C5F764 /* DynamicModel.m */,
 				6CD754741666AB2300CF0433 /* MainMenu.xib */,
 				6CD754661666AB2200CF0433 /* Supporting Files */,
 			);
@@ -209,7 +209,7 @@
 				6C0165E51672253700A52C3C /* multiProd.m in Sources */,
 				04F5EDC01674D6CE00B8CD9D /* randOneProd.m in Sources */,
 				6CF7E8BF167700AC008D90FD /* Model4.m in Sources */,
-				6CC58E5516775B4900C5F764 /* DinamicModel.m in Sources */,
+				6CC58E5516775B4900C5F764 /* DynamicModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

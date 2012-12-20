@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "Model4.h"
 #import "NormalDistr.h"
-#import "DinamicModel.h"
+#import "DynamicModel.h"
 
 int main(int argc, char *argv[])
 {

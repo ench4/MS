@@ -19,12 +19,13 @@
 
 -(BOOL) check
 {
-    double y1=sqrt(2*D*(K+p*Mx));
+    double y1=sqrt(2*D*(K+p*fabs((range1-range2)/2))/h);
     double y2=p*D/h;
+    //NSLog(@"y1 %f y2 %f\n",y1,y2);
     if (y1>=y2)
-        return true;
-    else
         return false;
+    else
+        return true;
 }
 -(float) caclC;
 {
@@ -64,18 +65,33 @@
         double R1;
         
         while (true) {
-            R1=R-(h*y*c)/(p*D);
-            if (fabs(R-R1)>0.01)
+            R1=range2-(h*y*c)/(p*D);
+            //NSLog(@"%f %f\n",R,y);
+            NSLog(@"y %f r %f \n",y,R1);
+            if (fabs(R-R1)<0.01)
                 break;
             else
             {
                 double S=range2*range2/2/c-R1*range2/c+R1*R1/2/c;
+                printf("%f\n",S);
                 y=sqrt(2*D*(K+p*S)/h);
+                R=R1;
             }
         }
         
         return y;
     }
 }
+-(NSString*) description
+{
+    if (![self check]){
+        return @"не удовлетворяет условию\n";
+    }
+    else
+    {
+        [self findY];
+        return [NSString stringWithFormat:@"Заказать %f ед., как только уровень запаса уменьшится до %f ед.\n",y,R];
 
+    }
+}
 @end

@@ -14,6 +14,7 @@
 }
 @property float x1;
 @property float x2;
+-(id)initWithX:(float)x11 andX2:(float)x22;
 @end
 
 Result* sqr(float a,float b,float c);

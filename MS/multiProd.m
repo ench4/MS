@@ -27,6 +27,7 @@
     for (int i=0;i<[products count];i++) {
         sum+=[(OneProd*)[products objectAtIndex:i] calcCapacity] ;
     }
+    printf("%f \n",sum);
     return sum;
 }
 -(float) deltaWithLambda:(float) lambda//разница между занимаемым местоми размером склада
@@ -35,6 +36,7 @@
     for (int i=0;i<[products count];i++) {
         sum+=[(OneProd*)[products objectAtIndex:i] capacityWithLambda:lambda] ;
     }
+    printf("%f \n",sum);
     return sum-warehouseSize;
 }
 -(void) doAll//изменяет размер заказа, чтобы он вместился на склад
@@ -45,10 +47,12 @@
     }else
     {
         float lambda=0;
+        printf("%----- f \n",[self deltaWithLambda:lambda]);
         while ([self deltaWithLambda:lambda]*[self deltaWithLambda:lambda-1]>0) {
-            lambda--;
+            lambda-=10000;
+            //printf("%f  \n",lambda);
         }
-        lambda=[self secantMethodFrom:lambda-1 To:lambda WithEps:0.001];
+        lambda=[self secantMethodFrom:/*lambda-1*/0 To:/*lambda*/-1234567 WithEps:0.001];
                 NSLog(@"%f ",[self deltaWithLambda:lambda]);
         for (int i=0; i<[products count]; i++) {
             [(OneProd*)(products[i]) recalcYoptWithLambda:lambda];

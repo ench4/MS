@@ -11,6 +11,16 @@
 @implementation Result
 @synthesize x1;
 @synthesize x2;
+-(id)initWithX:(float)x11 andX2:(float)x22
+{
+    self=[self init];
+    if (self)
+    {
+        x1=x11;
+        x2=x22;
+    }
+    return self;
+}
 @end
 
 Result* sqr(float a,float b,float c)

@@ -51,6 +51,7 @@
 -(float) calcB
 {
     double B=0;
+    NSLog(@"%f  \n",[NormalDistr inverseNormalDistrFor:alpha]);
     B=[NormalDistr inverseNormalDistrFor:alpha]*sqrt(sigma*sigma*T);
     B=((int)B)+1;//плохо
     return B;
